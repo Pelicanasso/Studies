@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="../CSS/03-table-styles.css">
+</head>
+
+<body>
+    <h1>Table Style</h1>
+    <table>
+        <tr>
+            <th>Ganhadores do GOTY</th>
+            <th>Ano</th>
+            <th>Gênero</th>
+        </tr>
+        <tr>
+            <td>Elden Ring</td>
+            <td>2022</td>
+            <td>Souls Like</td>
+        </tr>
+        <tr>
+            <td>It Takes Two</td>
+            <td>2021</td>
+            <td>Ação e Aventura</td>
+        </tr>
+        <tr>
+            <td>The Last Of Us Part II</td>
+            <td>2020</td>
+            <td>Ação e Aventura</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Podemos ter tabelas de diferentes formas</h1>
+    <p>com os heading nas laterais</p>
+    <table>
+        <tr>
+            <th>Heading</th>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+        </tr>
+        <tr>
+            <th>Heading</th>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+        </tr>
+        <tr>
+            <th>Heading</th>
+            <td>content</td>
+            <td>content</td>
+            <td>content</td>
+        </tr>
+    </table>
+    <p>com headings tanto nas laterais quanto em cima</p>
+    <table>
+        <tr>
+            <th></th>
+            <th>segunda</th>
+            <th>terça</th>
+            <th>quarta</th>
+            <th>quinta</th>
+        </tr>
+        <tr>
+            <th>8:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>9:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>tambem podemos ter títulos nas tábelas com a tag caption e também usar um heading para duas partes da tabela como atributo colspan</p>
+    <table>
+        <caption>Tabela muito pica</caption>
+        <tr>
+            <th colspan="2">Cabeça</th>
+            <th>Cabeça 2</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>Usar mais de uma coluna tbm é possível com o atributo rowspan</p>
+    <table>
+        <caption>Tabela muito pica</caption>
+        <tr>
+            <th rowspan="2">Cabeça</th>
+            <th>Cabeça 2</th>
+            <th>cabeça 3</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

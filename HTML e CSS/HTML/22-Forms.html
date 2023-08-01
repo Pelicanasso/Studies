@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            background-color: rgb(13, 13, 44);
+        }
+
+        form,
+        h1,
+        h2,
+        p {
+            color: aliceblue;
+        }
+
+        table,
+        th,
+        tr,
+        td {
+            border: 1px;
+            border-style: solid;
+            border-color: aliceblue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Elemento input</h1>
+    <h2>Tipo texto</h2>
+    <form>
+        <input type="text">
+    </form>
+    <hr>
+
+    <h2>Tipo Radio</h2>
+    <form action="">
+        <input type="radio">
+        <input type="radio" name="fasdf" id="">
+        <input type="radio">
+    </form>
+    <hr>
+
+    <h2>Tipo Checkbox</h2>
+    <form action="">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </form>
+    <hr>
+
+    <h2>Tipo Submit</h2>
+    <form action="">
+        <input type="submit">
+    </form>
+    <hr>
+
+    <h2>Tipo Button</h2>
+    <form action="">
+        <input type="button" onclick="alert('Salve Carai')" value="Clique aqui">
+    </form>
+    <hr>
+
+    <h2>Tipo password</h2>
+    <p>Diferente do texto esse aqui esconderá o que for escrito, já que é a senha</p>
+    <form action="">
+        <input type="password" name="senha" id="senha">
+    </form>
+    <hr>
+
+    <h2>Tipo Reset</h2>
+    <p>Botão que irá resetar tudo que foi colocado no formulário</p>
+    <form action="">
+        <input type="reset" value="Apagar tudo">
+    </form>
+    <hr>
+
+    <h2>Tipo Color</h2>
+    <form action="">
+        <input type="color" name="cor" id="cor">
+    </form>
+    <hr>
+
+    <h2>Tipo date</h2>
+    <form action="">
+        <input type="date">
+        <p>Podemos usar os parâmetros min e max para definir as datar mínimas e máximas</p>
+        <input type="date" min="2000-01-01" max="2030-01-01">
+    </form>
+    <hr>
+
+    <h2>Tipo datetime-local</h2>
+    <p>Comparado ao anterior esse á adicionado a hora</p>
+    <form action="">
+        <input type="datetime-local" name="teste" id="teste">
+    </form>
+    <hr>
+
+    <h2>Tipo Email</h2>
+    <p>basicamente para a informação ser validade é preciso que um email seja inserido</p>
+    <form action="">
+        <label for="email">Insira seu email:</label>
+        <input type="email" name="email" id="email">
+    </form>
+    <hr>
+
+    <h2>Tipo Image</h2>
+    <p>Define uma imagem como um botão</p>
+    <form action="">
+        <input type="image" src="../Images for EX/xbox controller.png" alt="submit" width="60">
+    </form>
+    <hr>
+
+    <h2>Tipo File</h2>
+    <p>Upload de arquivos</p>
+    <form action="">
+        <input type="file" name="fileq" id="fileq">
+    </form>
+    <hr>
+
+    <h2>Tipo Hidden</h2>
+    <p>Usado para esconder do usuário alguma informação, mas que ainda será enviada ao formulário, podendo ser editada
+        caso o usário saiba então não deve ser usado como um mecanismo de segurança
+    </p>
+    <form action="">
+        <label for="text">Insira aqui seu texto</label> <br>
+        <input type="text" id="Text"><br>
+        <input type="hidden" name="escondidinho">
+        <input type="submit" value="manda ai tio">
+    </form>
+    <hr>
+
+    <h2>Tipo Month</h2>
+    <form action="">
+        <input type="month" name="mes" id="mes">
+    </form>
+    <hr>
+
+    <h2>Tipo número</h2>
+    <form action="">
+        <input type="number" name="num" id="num">
+        <p>Podemos restringir o número com o min e max</p>
+        <input type="number" name="number" id="number" min="1" max="200">
+    </form>
+    <hr>
+
+    <h2>Tipo Range</h2>
+    <form action="">
+        <input type="range" name="vol" id="vol">
+        <p>Podemos colocar um mínimo e máximo, com o min e max</p>
+        <input type="range" name="volume" id="volume" min="0" max="100">
+    </form>
+    <hr>
+
+    <h2>Tipo Search</h2>
+    <form action="">
+        <input type="search" name="pesquisa" id="pesquisa">
+        <input type="submit" value="gsearch" id="Pesquisa">
+    </form>
+    <hr>
+
+    <h2>Tipo Tel</h2>
+    <p>Podemos colocar um padrão para o número de tel que deve ser colocado</p>
+    <form action="">
+        <input type="tel" name="telefone" id="telefone" pattern="[0-9]{9}">
+    </form>
+    <hr>
+
+    <h2>Tipo time</h2>
+    <form action="">
+        <input type="time" name="tempo" id="tempo">
+    </form>
+    <hr>
+
+    <h2>Tipo URL</h2>
+    <form action="">
+        <label for="site">Escreva o endereço do site:</label>
+        <input type="url" name="site" id="site">
+    </form>
+    <hr>
+
+    <h2>Input Week</h2>
+    <form action="">
+        <input type="week" name="semana" id="semana">
+    </form>
+    <hr>
+
+    <h1>Elemento Label</h1>
+    <p>Essa tag define um label para diversas outras tags, basicamente ele associa textos a determinados elementos
+        através do ID</p>
+    <form action="">
+        <label for="ntext">First name:</label> <br>
+        <input type="text" name="ntext" id="ntext"> <br>
+        <label for="lname">Last name:</label> <br>
+        <input type="text" name="lname" id="lname">
+    </form>
+    <hr>
+
+    <h2>Label no Radio</h2>
+    <form action="">
+        <input type="radio" name="fav_language" value="HTML" id="HTML">
+        <label for="HTML">HTML</label> <br>
+        <input type="radio" name="fav_language" value="JavaScript" id="JavaScript">
+        <label for="JavaScript">JavaScript</label> <br>
+        <input type="radio" name="fav_language" value="CSS" id="CSS">
+        <label for="CSS">CSS</label>
+    </form>
+    <hr>
+
+    <h2>Label no Checkbox</h2>
+    <form action="">
+        <input type="checkbox" name="language" id="HTML" value="HMTL">
+        <label for="HMTL">HTML</label> <br>
+        <input type="checkbox" name="language" id="JavaScript" value="JavaScript">
+        <label for="JavaScript">JavaScript</label> <br>
+        <input type="checkbox" name="language" id="CSS" value="CSS">
+        <label for="CSS">CSS</label> <br>
+        <input type="checkbox" name="language" id="PHP" value="PHP">
+        <label for="PHP">PHP</label>
+    </form>
+    <hr>
+
+    <h2>Label no button</h2>
+    <form action="">
+        <label for="fname">First Name:</label> <br>
+        <input type="text" name="fname" id="fname" value="John"> <br>
+        <label for="lname">Last Name:</label> <br>
+        <input type="text" name="lname" id="lname" value="Doe"> <br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <h1>Parâmentro Action</h1>
+    <p>Esse parâmetro entra na tag do form e define qual ação será tomando quando o botão submit for clicado, como por
+        exemplo ser enviado para um documento PHP
+    </p>
+    <form action="#">
+
+    </form>
+    <hr>
+
+    <h1>Parâmetro Target</h1>
+    <p>Esse parâmetro é colocado no form para definir aonde será aberta a nova janela após ser enviado o formulário</p>
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>_blank</td>
+            <td>A resposta será exibida em uma nova guia ou janela</td>
+        </tr>
+        <tr>
+            <td>_self</td>
+            <td>A resposta será monstrada na janela atual</td>
+        </tr>
+        <tr>
+            <td>_parent</td>
+            <td>A resposta será exibida em um frame parente</td>
+        </tr>
+        <tr>
+            <td>_top</td>
+            <td>A resposta será mostrada no corpo todo da janela</td>
+        </tr>
+        <tr>
+            <td>framename</td>
+            <td>A resposta será mostranda em um iframe</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1>Parâmetro GET</h1>
+    <p>Esse parâmetro pode ser usado na tag form para especificar o método HTTP que será usado quando eviado a
+        informação, tendo dois tipos "get" e "post". ainda não faço a menor ideia o que isso significa tenho que estudar
+        o HTTP
+    </p>
+    <hr>
+
+    <h1>Atributo Autocomplete</h1>
+    <p>Esse parâmetro define se autocompletar com as informações do usuário está ativo ou não</p>
+    <form action="#" autocomplete="on">
+        <input type="text" name="testse" id="testse">
+        <label for="testse">Testando o autocompletar</label>
+    </form>
+    <hr>
+
+    <h1>Parâmetro Novalidate</h1>
+    <p>Define se o contéudo será validade ou não quando o botão submit for clicado</p>
+    <form action="" novalidate>
+    </form>
+    <hr>
+
+    <h1>Elemento Select</h1>
+    <p>Essa tag cria uma lista vertical que pode ser aberta com o click, abrimos ela com a tag select e as opções
+        disponíveis com a tag option</p>
+    <form action="#">
+        <select name="Games" id="Games">
+            <option value="Zelda">The Legend Of Zelda</option>
+            <option value="Mario">Super Mario</option>
+            <option value="forza">Forza Horizon 5</option>
+            <option value="celeste">Celeste</option>
+            <option value="Dark Souls">Dark Souls</option>
+            <option value="Halo">Halo</option>
+            <option value="Fortnite">Fortnite</option>
+        </select> <br>
+        <p>Podemos utilizar o parâmetro size dentro do select para definir quantos valores serão visíveis por vez</p>
+        <select name="Games" id="Games" size="3">
+            <option value="Zelda">The Legend Of Zelda</option>
+            <option value="Mario">Super Mario</option>
+            <option value="forza">Forza Horizon 5</option>
+            <option value="celeste">Celeste</option>
+            <option value="Dark Souls">Dark Souls</option>
+            <option value="Halo">Halo</option>
+            <option value="Fortnite">Fortnite</option>
+        </select>
+        <p>Podemos usar o parâmetro multiple para que o usuário escolha mais de uma resposta, o usuário poderá sergurar
+            ctrl para selecionar mais de uma resposta</p>
+        <select name="Games" id="Games" size="4" multiple>
+            <option value="Zelda">The Legend Of Zelda</option>
+            <option value="Mario">Super Mario</option>
+            <option value="forza">Forza Horizon 5</option>
+            <option value="celeste">Celeste</option>
+            <option value="Dark Souls">Dark Souls</option>
+            <option value="Halo">Halo</option>
+            <option value="Fortnite">Fortnite</option>
+        </select>
+    </form>
+    <hr>
+
+    <h1>Elemento Textarea</h1>
+    <p>Essa tag cria uma área aonde o usário poderá escrever, temso que definir o número de linhas e colunas</p>
+    <form action="">
+        <textarea name="test" id="test" cols="30" rows="10">Escrevendo aqui pra testar</textarea>
+    </form>
+    <hr>
+
+    <h1>Elemento Button</h1>
+    <p>Cria um botão clicável</p>
+    <form action="">
+        <button type="button" onclick="alert('Hello World')">Clique Aqui</button>
+    </form>
+    <hr>
+
+    <h1>Elementos Fieldset e Legend</h1>
+    <p>Fieldset é usado para agrupar um conjunto que esteja relacionado em um formulário</p>
+    <p>O legend é usado como uma legenda para o Fieldset</p>
+    <form action="">
+        <fieldset>
+            <legend>Testando aqui o Fieldset</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <hr>
+
+    <h1>Elemento Datalist</h1>
+    <p>Essa tag define a lista de pré-definições para a tag Input do tipo list, ela apárecerá como um menu de
+        autocompletar</p>
+    <form action="">
+        <input list="Browsers">
+        <datalist id="Browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Safari"></option>
+            <option value="Mozila Firefox"></option>
+            <option value="Brave"></option>
+            <option value="Google Chrome"></option>
+        </datalist>
+    </form>
+    <hr>
+
+    <h1>Elemento Placeholder</h1>
+    <form action="">
+        <label for="Place">Insira aqui seu número</label>
+        <input type="tel" name="num" id="Place" pattern="[0-9]{5}-[0-9]{4}" placeholder="(00)12345-1234">
+    </form>
+    <hr>
+
+    <h1>Parâmetro Formaction</h1>
+    <p>Esse parâmetro é utilizado para definir o url que irá processar a resposta do usuário quando enviada, útil para quando temos mais de um botão na situação</p>
+    <form action="">
+        <input type="submit" value="Submit padrão"> <br>
+        <input type="submit" value="Submit com formaction" formaction="#">
+    </form>
+    <hr>
+</body>
+</html>

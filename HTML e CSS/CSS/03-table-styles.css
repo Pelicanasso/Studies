@@ -1,0 +1,20 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: blue;
+}
+
+th, td{
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
+
+tr:hover{
+    background-color: aqua;
+}

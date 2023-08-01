@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(25, 25, 62);
+}
+
+p{
+    border: 2px solid rgb(1, 1, 19);
+    padding: 50px;
+    margin: 50px;
+    font-family: OptimusPrinceps;
+    font-size: 200%;
+}
+
+h1{
+    border:2px solid black;
+    padding: 20px;
+    font-family: OptimusPrinceps;
+    font-size: 30px;
+}
