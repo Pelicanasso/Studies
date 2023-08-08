@@ -5,7 +5,7 @@ in python we use
 * : multiplication
 / : division
 // : division but stores only the integer part
-% : Retorna o resto da divisão entre operandos
+% : make the division of the numbers an returns the rest of the division(4/2 gives 0 of rest in the division)
 ** : Retorna um número elevado a potência de outro
 pow(x, y) : returns the x elevated to y
 
