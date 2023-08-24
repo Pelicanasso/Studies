@@ -1,6 +1,5 @@
-#include <stdio.h>
+#include <iostream>
 
 main{
     prinf("Hello World!")
-    
 }

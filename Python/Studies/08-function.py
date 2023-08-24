@@ -1,4 +1,4 @@
-# functions basicaly is a task set under one name, ia form of organization 
+# functions basicaly is a task set under one name, is form of organization 
 
 # Function EVAL receives a string input and convert, this input will be analised and converted
 # for a python comand, he is one of the 70 functions natives from python
@@ -44,7 +44,7 @@ def discount_calculate(value, discount = 0):
 without_dicount = discount_calculate(100) #in this first he will use the default value for the discount
 with_discount = discount_calculate(100, 0.25) #Here the discount value will be 0.25, or 25%
 
-print(f"Total da compra: {without_dicount}") 
+print(f"Total da compra: {without_dicount}")
 print(f"Total da compra: {with_discount}")
 
 print("===============================================================")
@@ -71,7 +71,7 @@ def convert_uppercase(text, upper_flag):
     else:
         return text.lower()
     
-text = convert_uppercase(upper_flag= True, texto = "Ryan")
+text = convert_uppercase(upper_flag= True, text = "Ryan")
 print(text)
 
 # Exporing more the comand RETURN with another comand, SPLIT
@@ -92,4 +92,49 @@ def converting_month_to_extense(date): #creatimg function
 # printing function inform the date to convert
 print(converting_month_to_extense("05/08/2023"))
 
+print("================================================================")
 
+def convert_lowercase(text, lower_case = True):
+    if lower_case:
+        return text.lower()
+    else:
+        return text.upper()
+
+text1 = convert_lowercase(lower_case = True, text = "LINGUAGEM DE PROGRAMAÇÃO")
+text2 = convert_lowercase(text = "LINGUAGEM de programção")
+
+print(f"\nTexto 1 = {text1}")
+print(f"\nText 2 = {text2}")
+
+print("================================================================")
+
+#Creating a function with no defined number of parameters, doens't need to be called ARGS but is good practice, the * is obrigated
+def print_parameters(*args):
+    qtde_parameters = len(args) #LEN function returns the number of items in an object
+    print(f"Number os parameters = {qtde_parameters}")
+
+    for i, valor in enumerate(args): #ENUMERATE converts a data collection object into an enumerate object, the i will receive the position and value the value of the object
+        print(f"Posição = {i}, valor = {valor}")
+
+print("\nChamada 1:")
+print_parameters("São paulo", 10, 23.78, "João")
+
+print(f"\nChamada 2:")
+print_parameters(10, "São Paulo")
+
+print("================================================================")
+
+#function was defined a way he needs nominal parameters, using the **kwargs, doens't need to be called kwargs but is a good practice, the 2 * is obragated
+def print_parameters1(**kwargs):
+    print(f"Tipo de objeto recebido = {type(kwargs)}\n") #TYPE returns the type of a information
+    qtde_parameters =  len(kwargs) #LEN function returns the number of itens in a list
+    print(f"Quantidade de parâmetros = {qtde_parameters}") 
+
+    for chave, valor in kwargs.items(): 
+        print(f"variável = {chave}, valor = {valor}")
+
+print("\nChamada 1:")
+print_parameters1(city = "Presidente Prudente", name = "Ryan", age = 21, height = 1.72)
+
+print("\nChamada 2")
+print_parameters1(discount = 10, value = 100)
