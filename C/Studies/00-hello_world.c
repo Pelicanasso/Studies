@@ -1,5 +1,7 @@
-#include <iostream>
+#include<stdio.h>
 
-main{
-    prinf("Hello World!")
+int main(){
+    printf("Hello World!");
+     
+    return 0;
 }
